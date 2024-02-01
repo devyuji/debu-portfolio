@@ -8,11 +8,9 @@ function About() {
 
         <div className="flex gap-4 flex-col md:flex-row items-center rounded-2xl bg-zinc-800 max-w-full p-4">
           <div className="overflow-hidden w-full md:w-2/4 grid place-items-center">
-            <Image
+            <img
               src="/profile.jpeg"
               alt=""
-              width={200}
-              height={200}
               className="object-cover rounded-full w-96 h-96 "
             />
           </div>
