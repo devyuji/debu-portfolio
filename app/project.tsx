@@ -27,12 +27,9 @@ export default function Project() {
             </div>
 
             <div className="md:w-3/4 w-full">
-              <Image
+              <img
                 src="/clinews/darkmode.png"
                 alt="CLI News"
-                width={200}
-                height={200}
-                quality={100}
                 className="aspect-video w-full"
               />
             </div>
@@ -54,12 +51,9 @@ export default function Project() {
             </div>
 
             <div className="md:w-3/4 w-full">
-              <Image
+              <img
                 src="/car-rental-system/rent-a-car.png"
-                width={200}
-                height={200}
                 alt="car rental system"
-                quality={100}
                 className="w-full aspect-video"
               />
             </div>
