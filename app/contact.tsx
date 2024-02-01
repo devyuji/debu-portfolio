@@ -3,11 +3,18 @@
 import { useRef, useState } from "react";
 
 export default function Contact() {
-  const email = useRef("debojyti@gmail.com");
+  const email = useRef("aec.ece.debojyotimahto.2024.033@gmail.com");
 
-  const [emailInput, setEmailInput] = useState("");
   const [nameInput, setNameInput] = useState("");
   const [messageInput, setMessageInput] = useState("");
+
+  const submit = (e: any) => {
+    e.preventDefault();
+
+    const mail = `mailto:${email.current}?Subject=My name is ${nameInput}&body=${messageInput}`;
+
+    window.location.href = mail;
+  };
 
   return (
     <section className="w-full grid place-items-center gap-10 p-4" id="contact">
@@ -62,15 +69,7 @@ export default function Contact() {
         </div>
 
         <div className="w-full">
-          <form onSubmit={(e) => e.preventDefault()} className="grid gap-4">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              className="h-12 bg-zinc-800 p-2"
-              onChange={(e) => setEmailInput(e.target.value)}
-            />
-
+          <form onSubmit={submit} className="grid gap-4">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -86,13 +85,9 @@ export default function Contact() {
               onChange={(e) => setMessageInput(e.target.value)}
             />
 
-            <a
-              href={`mailto:${email.current}?Subject=Hi&message=${messageInput}`}
-              target="_blank"
-              className="bg-orange-500 rounded-2xl py-4 px-2 grid place-items-center"
-            >
+            <button className="bg-orange-500 rounded-2xl py-4 px-2">
               Send
-            </a>
+            </button>
           </form>
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function Project() {
               </p>
             </div>
 
-            <div className="w-3/4">
+            <div className="md:w-3/4 w-full">
               <Image
                 src="/clinews/darkmode.png"
                 alt="CLI News"

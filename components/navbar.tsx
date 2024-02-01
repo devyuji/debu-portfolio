@@ -6,14 +6,13 @@ function Navbar() {
     <header className="flex justify-center w-full bg-zinc-800 h-20">
       <Container className="flex items-center p-8">
         <div>
-          <p className="font-bold text-2xl">DEBO</p>
+          <Link href="/">
+            <img src="/rusty.png" alt="debu" className="w-16" />
+          </Link>
         </div>
 
         <nav className="ml-auto">
           <ul className="flex items-center gap-4">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
             <li>
               <Link href="#about">About</Link>
             </li>
