@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 function About() {
   return (
     <section className="w-full" id="about">
@@ -11,7 +9,7 @@ function About() {
             <img
               src="/profile.jpeg"
               alt=""
-              className="object-cover rounded-full w-96 h-96 "
+              className="object-cover rounded-full w-72 h-72 "
             />
           </div>
 
